@@ -6,7 +6,7 @@ using System.Text.Json;
 namespace MessageBroker_Lib
 {
     public class Producer
-    {
+    {        
         private readonly IModel _channel;
         public Producer(string host, Model.Queue queue)
         {

@@ -14,7 +14,7 @@ namespace MessageBroker_Lib
             _channel = connection.CreateModel();
 
             _channel.QueueDeclare(queue: queue.QueueName, durable: queue.IsDurable, exclusive: queue.IsExclusive, autoDelete: queue.ShouldAutoDelete, arguments: queue.Arguments);
-
+            
             EventingBasicConsumer consumer = new EventingBasicConsumer(_channel);
             consumer.Received += (model, ea) =>
             {

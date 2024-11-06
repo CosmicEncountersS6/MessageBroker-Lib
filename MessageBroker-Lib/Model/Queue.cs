@@ -8,7 +8,7 @@ namespace MessageBroker_Lib.Model
 {
     public class Queue
     {
-        public Queue(string queueName)
+        public Queue(string queueName) 
         {
             QueueName = queueName;
         }
